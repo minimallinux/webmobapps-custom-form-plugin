@@ -1,7 +1,7 @@
 <?php
 function deliver_mail() {
     // if the submit button is clicked, send the email
-    if ( isset( $_POST['submitted'] ) ) {
+    if ( isset( $_POST['submit'] ) ) {
 
         // sanitize form values
         $name    = sanitize_text_field( $_POST["name"] );
@@ -26,6 +26,7 @@ function deliver_mail() {
         }
     }
 }
+//Another Shortcode function
 function wpcf_shortcode() {
     ob_start();
     deliver_mail();
