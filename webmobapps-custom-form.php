@@ -177,13 +177,15 @@ function deliverMail() {
                 "Email Address: $email" . "\r\n" .
                 "Message: $message";
 
-        // If email has been process for sending, display a success message
+        // If email has been process for sending, display a success message, with echo (commented out) or redirect.
         if ( wp_mail( $to, $subject, $body ) ) {
-            echo '<div>';
+            header('Location: http://vhost4.com/wordpress/?page_id=79&preview=true');
+            exit();
+            /*echo '<div>';
             echo '<h2>Thanks for contacting us, expect a response soon.</h2>';
-            echo '</div>';
+            echo '</div>';*/
         } else {
-            echo 'An unexpected error occurred';
+            echo '<h2>An unexpected error occurred</h2>';
         }
     }
 }

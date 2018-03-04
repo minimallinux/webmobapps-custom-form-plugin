@@ -12,7 +12,7 @@ or in other areas via WP Admin etc. [webmobapps_custom_form]
 
 Taken from an original class by Tahir at http://www.scriptbaker.com/author/tahir/
 
-and extended a bit with extra validation and submission functions.
+and extended a bit with extra validation and submission functions, submit success/error message with echo or redirect.
 
 Error messages are made with WP_Error class but can be changed to an alert or something else.
 
