@@ -2,7 +2,7 @@
  /**
  * Plugin Name: WP Contact Details Plugin
  * Plugin URI: https://github.com/minimallinux/webmobapps-custom-form-plugin.git/
- * Description: WordPress Contact Form Plugin with shortcode and submit/validation functions and error messages.
+ * Description: Customizable WordPress Contact Form Plugin with shortcode and submit/validation functions and success/error messages.
  * Version: 1.0
  * Author: P A McGowan
  * Author URI: https://webmobapps.com/
