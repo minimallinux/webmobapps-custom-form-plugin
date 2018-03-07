@@ -72,7 +72,7 @@
         }
  
 function shortcode_handler($atts) {
-    return "<form method='post' action=''>
+    return "<form class='uk-form' method='post' action=''>
 <fieldset data-uk-margin>
 <label class='label'>Name</label>
 <div class='uk-form-row'>
@@ -179,11 +179,11 @@ function deliverMail() {
 
         // If email has been process for sending, display a success message, with echo (commented out) or redirect.
         if ( wp_mail( $to, $subject, $body ) ) {
-            header('Location: http://vhost4.com/wordpress/?page_id=79&preview=true');
-            exit();
-            /*echo '<div>';
+            /*header('Location: http://vhost4.com/wordpress/index.php/thank-you/');
+            exit();*/
+            echo '<div>';
             echo '<h2>Thanks for contacting us, expect a response soon.</h2>';
-            echo '</div>';*/
+            echo '</div>';
         } else {
             echo '<h2>An unexpected error occurred</h2>';
         }
